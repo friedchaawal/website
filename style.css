@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800');
+:root {
+    --color-base: hsl(249deg 22% 12%);
+    --color-surface: hsl(247deg 23% 15%);
+    --color-overlay: hsl(248deg 25% 18%);
+    --color-muted: hsl(249deg 12% 47%);
+    --color-subtle: hsl(248deg 15% 61%);
+    --color-text: hsl(245deg 50% 91%);
+    --color-love: hsl(343deg 76% 68%);
+    --color-gold: hsl(35deg 88% 72%);
+    --color-rose: hsl(2deg 55% 83%);
+    --color-pine: hsl(197deg 49% 38%);
+    --color-foam: hsl(189deg 43% 73%);
+    --color-iris: hsl(267deg 57% 78%);
+    --color-low: #21202e;
+    --color-med: #403d52;
+    --color-high: #524f67;
+}
+html,body {
+	font-family: "Jetbrains Mono";
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	margin: 0;
+	color: var(--color-foam);
+	font-size: 40px;
+}
+p {
+	margin: 0;
+	color: var(--color-text);
+}
+button {
+	font-family: inherit;
+}
+.flexible {
+	flex: 1;
+}
+.centered {
+	justify-content: center;
+}
+.container {
+	display: flex;
+}
+.column {
+	flex-direction: column;
+}
+.row {
+	flex-direction: row;
+}
+#Parent {
+	height: 100%
+}
+#Sidebar {
+	background-color: var(--color-overlay);
+	max-width: 250px;
+	gap: 10px;
+}
+#Pfp {
+	margin: 25px 25px 5px 25px;
+	border-radius: 50%;
+}
+#Handles {
+	font-size: 30px;
+	gap: 1px;
+}
+#Handles > a {
+	text-decoration: none;
+	color: var(--color-foam);
+	text-align: center;
+	width: 50px;
+	border-radius: 5px;
+	padding: 5px;
+}
+#Handles > a > i {
+}
+#Handles > a:hover {
+	color: var(--color-gold);
+	filter: brightness(110%);
+	transition: color 0.3s;
+}
+#Handles > a:active {
+	filter: brightness(75%);
+}
+#Discordserver {
+	font-size: 20px;
+}
+#Discordserver > a {
+	text-decoration: none;
+	color: var(--color-foam);
+	text-align: center;
+	border-radius: 5px;
+	padding: 2px 10px;
+}
+#Discordserver > a > i {
+}
+#Discordserver > a:hover {
+	color: var(--color-gold);
+	filter: brightness(110%);
+	transition: color 0.3s;
+}
+#Discordserver > a:active {
+	filter: brightness(75%);
+}
+#Nav {
+	margin: 40px 5px;
+	gap: 25px;
+}
+#Nav > a {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+#Nav > a > button.inactive {
+	font-size: 25px;
+	width: 225px;
+	height: 50px;
+	border: 0;
+	border-radius: 5px;
+	background-color: var(--color-iris);
+	color: var(--color-base);
+}
+#Nav > a > button.inactive:hover {
+	background-color: var(--color-gold);
+	filter: brightness(110%);
+	transition: color 0.3s;
+}
+#Nav > a > button.inactive:active {
+	filter: brightness(75%);
+}
+#Nav > a > button.active {
+	font-size: 25px;
+	width: 225px;
+	height: 50px;
+	border: 0;
+	border-radius: 5px;
+	color: var(--color-base);
+	background-color: var(--color-gold);
+	filter: brightness(75%);
+}
+#Main {
+	background-color: var(--color-base);
+}
+#Content {
+}
